@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7a2a3cc302662019c6086da543dac0d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e7a2a3cc302662019c6086da543dac0d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7a2a3cc302662019c6086da543dac0d = L.map(
+                "map_e7a2a3cc302662019c6086da543dac0d",
+                {
+                    center: [37.5697987, 126.9837167],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_160dac7450e2f0551796cce6109493e9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+            var marker_d2601917c490d2082cfccc74dac87fc7 = L.marker(
+                [37.579617, 126.977041],
+                {}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+            var icon_e24e71457bc955714d4c0afbacb7e422 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "save", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d2601917c490d2082cfccc74dac87fc7.setIcon(icon_e24e71457bc955714d4c0afbacb7e422);
+        
+    
+        var popup_a1f0a2622fb17928f24d2af2607a483e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9edd54c875e4139de78c5a03009f59b = $(`<div id="html_f9edd54c875e4139de78c5a03009f59b" style="width: 100.0%; height: 100.0%;">경복궁</div>`)[0];
+                popup_a1f0a2622fb17928f24d2af2607a483e.setContent(html_f9edd54c875e4139de78c5a03009f59b);
+            
+        
+
+        marker_d2601917c490d2082cfccc74dac87fc7.bindPopup(popup_a1f0a2622fb17928f24d2af2607a483e)
+        ;
+
+        
+    
+    
+            var marker_d9b6388d8c046eb6eb10a4167a09135b = L.marker(
+                [37.5799002, 126.991174],
+                {}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+            var icon_46a155c37b16161472688f1ff2b38682 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plus", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d9b6388d8c046eb6eb10a4167a09135b.setIcon(icon_46a155c37b16161472688f1ff2b38682);
+        
+    
+        var popup_b137b2cd88853cdef4cb5cf1cda41b97 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bb5ceeca7faa07ded7b0b95f9db1fcd = $(`<div id="html_6bb5ceeca7faa07ded7b0b95f9db1fcd" style="width: 100.0%; height: 100.0%;">창덕궁</div>`)[0];
+                popup_b137b2cd88853cdef4cb5cf1cda41b97.setContent(html_6bb5ceeca7faa07ded7b0b95f9db1fcd);
+            
+        
+
+        marker_d9b6388d8c046eb6eb10a4167a09135b.bindPopup(popup_b137b2cd88853cdef4cb5cf1cda41b97)
+        ;
+
+        
+    
+    
+            var marker_9d47e15a9c7cdba160b05a2750a82350 = L.marker(
+                [37.5658049, 126.9751461],
+                {}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+            var icon_a4829a7783a56dbd42b221a492313203 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "heart", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_9d47e15a9c7cdba160b05a2750a82350.setIcon(icon_a4829a7783a56dbd42b221a492313203);
+        
+    
+        var popup_05c06121a8c30893b25a2be5be10a61a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_954f978e2cbb2280ac69f6b9c2373882 = $(`<div id="html_954f978e2cbb2280ac69f6b9c2373882" style="width: 100.0%; height: 100.0%;">덕수궁</div>`)[0];
+                popup_05c06121a8c30893b25a2be5be10a61a.setContent(html_954f978e2cbb2280ac69f6b9c2373882);
+            
+        
+
+        marker_9d47e15a9c7cdba160b05a2750a82350.bindPopup(popup_05c06121a8c30893b25a2be5be10a61a)
+        ;
+
+        
+    
+    
+            var marker_1668bb394f91ec41260b61ba740f641b = L.marker(
+                [37.5787708, 126.9948698],
+                {}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+            var icon_49abd3ef495fca0846e5389b57f8a289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1668bb394f91ec41260b61ba740f641b.setIcon(icon_49abd3ef495fca0846e5389b57f8a289);
+        
+    
+        var popup_d0e974e93db17f97f4cd71da1fcf71fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_940d4257995c9168951999849f33d66a = $(`<div id="html_940d4257995c9168951999849f33d66a" style="width: 100.0%; height: 100.0%;">창경궁</div>`)[0];
+                popup_d0e974e93db17f97f4cd71da1fcf71fa.setContent(html_940d4257995c9168951999849f33d66a);
+            
+        
+
+        marker_1668bb394f91ec41260b61ba740f641b.bindPopup(popup_d0e974e93db17f97f4cd71da1fcf71fa)
+        ;
+
+        
+    
+    
+            var marker_8a462a5af1ab904390db7e72ed7766dd = L.marker(
+                [37.570176, 126.983197],
+                {}
+            ).addTo(map_e7a2a3cc302662019c6086da543dac0d);
+        
+    
+        var popup_e9b11a43f93e05441aedb7cdd451e26e = L.popup({"maxWidth": 200});
+
+        
+            
+                var html_c2133e2a020d98e77eeead0d0f315421 = $(`<div id="html_c2133e2a020d98e77eeead0d0f315421" style="width: 100.0%; height: 100.0%;">영풍문고 - 종로본점</div>`)[0];
+                popup_e9b11a43f93e05441aedb7cdd451e26e.setContent(html_c2133e2a020d98e77eeead0d0f315421);
+            
+        
+
+        marker_8a462a5af1ab904390db7e72ed7766dd.bindPopup(popup_e9b11a43f93e05441aedb7cdd451e26e)
+        ;
+
+        
+    
+</script>
+</html>
